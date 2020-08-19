@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:13306/thinkub?characterEncoding=UTF-8&serverTimezone=Asia/Seoul
+    username: thinkub
+    password: P@ssw0rd
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate.format_sql: true
+logging:
+  level:
+    com.ming.jpa: DEBUG
+    org:
+      hibernate:
+        type: trace
+        SQL: DEBUG
